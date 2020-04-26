@@ -9,7 +9,7 @@ public class Back0_1 {
 
 	public static void main(String[] args) {
 		Back0_1 b0_1 = new Back0_1();
-		b0_1.f(n, w);
+		b0_1.f(0, 0);
 	}
 
 	private int maxW = Integer.MIN_VALUE; // 结果放到maxW中
@@ -19,15 +19,20 @@ public class Back0_1 {
 	private static int w = 9; // 背包承受的最大重量
 	private boolean[][] mem = new boolean[5][10]; // 备忘录，默认值false
 	
-	public void f(int i, int cw) { // 调用f(0, 0)
+	public void f(int i, int cw) { // 调用f(0, 0)【当】
+		System.out.println("i="+i+ " w="+cw);
+
 	  if (cw == w || i == n) { // cw==w表示装满了，i==n表示物品都考察完了
-	    if (cw > maxW) maxW = cw;
+		  System.out.println("哦哦；i="+i+ " w="+cw);
+
+		  if (cw > maxW) maxW = cw;
+		  System.out.println("maxw="+maxW);
 	    return;
 	  }
-	  if (mem[i][cw]) return; // 重复状态
+	  if (mem[i][cw]) return; // 重复状态 if(false),不执行return
 	  mem[i][cw] = true; // 记录(i, cw)这个状态【直接开始返回，不用继续往后递归f( i , cw)】
-	  f(i+1, cw); // 选择不装第i个物品
-	  if (cw + weight[i] <= w) {
+	  f(i+1, cw); // 选择不装第i个物品 【i=5时开始return，然后return i=4】
+	  if (cw + weight[i] <= w) { //先判断0+3<w（9)这里先装i=4的物品，即weight[4]=3
 	    f(i+1,cw + weight[i]); // 选择装第i个物品
 	  }
 	}

@@ -62,7 +62,7 @@ public class Quick_sort {
 		
 		//3、用j索引遍历数组
 		for(int j = p; j < r; j++) {//当j索引指向r(最后一个元素是，跳出循环)
-			if(a[j] < pivot) {
+			if(a[j] < pivot) { //[当有元素大于pivot时，j移动，i不动]
 				if(i == j) {//i索引==j索引，i和j都后移
 					++i;
 				} else {//i索引不等于j索引，交换a[i]与a[j],i++;

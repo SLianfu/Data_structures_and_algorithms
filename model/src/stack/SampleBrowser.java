@@ -27,7 +27,7 @@ public class SampleBrowser {
         browser.checkCurrentPage();
     }
 
-    private String currentPage;
+    private String currentPage; //初始值为null
     private LinkedListBasedStack backStack;
     private LinkedListBasedStack forwardStack;
 
@@ -37,7 +37,7 @@ public class SampleBrowser {
     }
 
     public void open(String url) {
-        if (this.currentPage != null) {
+        if (this.currentPage != null) { //第一次加入时，if（false）
             this.backStack.push(this.currentPage);
             this.forwardStack.clear();//打开了新的页面后，前进数据栈就被清空
         }
@@ -53,7 +53,7 @@ public class SampleBrowser {
     }
 
     public String goBack() {
-        if (this.canGoBack()) {
+        if (this.canGoBack()) {//可以后退，backStack.size() > 0
             this.forwardStack.push(this.currentPage);
             String backUrl = this.backStack.pop();
             showUrl(backUrl, "Back");
@@ -65,7 +65,7 @@ public class SampleBrowser {
     }
 
     public String goForward() {
-        if (this.canGoForward()) {
+        if (this.canGoForward()) { // 可以前进
             this.backStack.push(this.currentPage);
             String forwardUrl = this.forwardStack.pop();
             showUrl(forwardUrl, "Foward");
@@ -82,6 +82,7 @@ public class SampleBrowser {
     }
 
     public void checkCurrentPage() {
+
         System.out.println("Current page is: " + this.currentPage);
     }
 

@@ -26,7 +26,7 @@ public class BubbleInsertionSelectSort {
 					flag = true;//标志此次冒泡有数据交换
 				}
 			}
-			if(!flag) break;//没有数据交换，提前退出(内循坏没有数据交换，即排序完成提前退出)
+			//if(!flag) break;//没有数据交换，提前退出(内循坏没有数据交换，即排序完成提前退出)
 			
 		}
 	}
@@ -35,7 +35,7 @@ public class BubbleInsertionSelectSort {
      * 冒泡排序改进:在每一轮排序后记录最后一次元素交换的位置,作为下次比较的边界,
      * 对于边界外的元素在下次循环中无需比较.//这样的就节省了j < n-i-1的计算次数
      */
-	public static void bubuleSort2(int[] a, int n) {
+	public static void bubbleSort2(int[] a, int n) {
 		if( n <= 1) return ;
 		//最后一次交换的位置
 		int lastExchange = 0;
@@ -103,7 +103,7 @@ public class BubbleInsertionSelectSort {
 
 	public static void main(String[] args) {
 		int[] array = new int[] {3,4,2,1,5,6,7,8};
-		//bubuleSort2(array, array.length);
+		bubbleSort(array, array.length);
 		//selectionSort(array, array.length);
 		//insertionSort(array, array.length);
 		System.out.println(Arrays.toString(array));

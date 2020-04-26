@@ -35,6 +35,10 @@ public class GenericArray<T> {
 
 	//扩充方法，时间复杂度 O(n),这里的修师符为private
 	private void resize(int capacity) {
+		/*if(capacity <= size){ 还可以缩容的
+			System.out.println("扩充失败，capacity <= size");
+			return;
+		}*/
 		T[] newData = (T[]) new Object[capacity];
 		
 		//将原数据放扩充数组中
@@ -43,6 +47,7 @@ public class GenericArray<T> {
 		}
 		//把扩充数组赋值给data
 		data = newData;
+		return;
 	}
 	
 	//修改 index 位置的元素
@@ -53,7 +58,7 @@ public class GenericArray<T> {
 	
 	//获取对应 index 位置的元素
 	public T get(int index) {
-		checkIndex(index);
+		checkIndex(index);	//12345,get(5)=null
 		return data[index];
 	}
 	
@@ -126,13 +131,18 @@ public class GenericArray<T> {
 	public T remove(int index) {
 		checkIndexForRemove(index);//检查index 不大于数组已经存储的值的大小（size）
 		
-		T ret = data[index];
+		T ret = data[index];	//实例：size=4(0,1,2,3),删除index=1
 		//将index前面的元素往前移动一位
-		for(int i = size-1; i > index; --i) {
+		/*for(int i = size-1; i > index; --i) {// for (int i=index+1; i<count; ++i){
+			data[i-1] = data[i];//3,3->2,2:2->1,1=index data[size(4)]=null
+		}.....哦哦，不可以这样子，data[3]移动到data[2]=add,然后继续移动到data[1]=add*/
+
+		for (int i = index+1; i < size; i++){
 			data[i-1] = data[i];
 		}
-		--size;
+		--size;//size=3,data[3]=null,数组变成:0,1,2
 		data[size]=null;
+		System.out.println("size:"+size+" data[size]:"+data[size]);
 		
 		 // 缩容		这里有点不懂？【容量是size的4倍，容量/2 不等于0】【避免size=0,容量也是0】
         if (size == data.length / 4 && data.length / 2 != 0) {
@@ -154,8 +164,11 @@ public class GenericArray<T> {
 	//删除指定元素
 	public void removeElement(T e) {
 		int index = find(e);
+		//
+		System.out.println("找到要删除的元素下标："+index);
 		if(index != -1) {
-			remove(index);
+			T ret = remove(index);
+			System.out.println("ret:"+ret);
 		}
 	}
 	
@@ -191,7 +204,8 @@ public class GenericArray<T> {
 		
 		//判断数组下标是否越界；
 		private void checkIndex(int index) {
-			if(index < 0 || index > size) {
+			if(index < 0 || index > size) {//不可以 index > size，当index=size：get(size)=null
+				//又要index满足 index=size
 				//index >= size为什么这里是大于；【可能是数组扩充时index可以等于size吧】
 				//12345，下标是01234，size是5，index=5时，不报错
 				throw new IllegalAccessError("Add failed! Require index >=0 and index <= size");
@@ -212,20 +226,24 @@ public class GenericArray<T> {
 			int count = array.getCount();
 			array.insert(0, "ab");
 			array.insert(0, "abc");
-			array.insert(2, "size");
+			array.insert(2, "size11");
 			//扩充
-			array.insert(3, "add");
+			array.insert(3, "add22");
 			
 			//String remove = array.remove(2);
 			//System.out.println("移除的数值："+remove);
-			
-			array.removeElement("ab");
-			array.removeElement("www");
-			array.remove(2);
+
+			//array.removeElement("ab");//这里出debug了
+			//array.removeElement("www");
+			//array.remove(2);
 			
 			System.out.println(array.toString());
-			
-			
+			//
+			array.printAll();
+			String s = array.get(4);//get(5);false
+			System.out.println("array.get(4);:"+s);//=null
+
+
 			System.out.println("数组的长度="+array.getCapacity());
 			System.out.println("数组的实际大小="+array.getCount());
 		}

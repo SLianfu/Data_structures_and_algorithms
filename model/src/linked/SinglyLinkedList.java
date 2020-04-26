@@ -1,8 +1,6 @@
 package linked;
 
-import com.atguigu.linked.SinglyLinkedList.Node;
-import com.atguigu.wo.Wo.Node2;
-
+import linked.SinglyLinkedList.Node;
 /**
  * 单链表：的插入、删除、查询操作（）修改呢？
  * 链表中存储的是int类型
@@ -155,7 +153,7 @@ public class SinglyLinkedList {
 		
 		if(p == null) return ;//链表没有这个值，
 		if(q == null) {	//要删除的节点 是头节点
-			head = head.next;//？不过这样删除节点是干嘛的
+			head = head.next;//？不过这样删除节点是干嘛的【q=null,表明head.data=value,while循环没有执行】
 		} else {
 			q.next = q.next.next;//删除节点：删除p,
 		}
@@ -197,6 +195,8 @@ public class SinglyLinkedList {
 			p = p.next;
 		}
 		System.out.println();
+		String s = "ddd";
+		s.length();
 	}
 	
 	//判断true or false//相等
@@ -249,13 +249,14 @@ public class SinglyLinkedList {
     		System.out.println("开始执行奇数节点的回文判断");
     		Node leftLink = null;
     		Node rightLink = null;
-    		if(q.next == null) {
+    		if(q.next == null) {//偶数节点的回文判断
     			//p 一定为整个链表的中间节点，且节点数目为奇数
     			rightLink = p.next;//【321】
     			leftLink = inverseLinkList2(p).next;//加个next把4去掉：321【根据p=中间节点，翻转0~p链表】
+				//【先反转头节点到p节点，p.data=4,反转后为4321】
     			System.out.println("左边第一个节点"+leftLink.data);
                 System.out.println("右边第一个节点"+rightLink.data);
-    		} else {
+    		} else {////奇数节点的回文判断
     			//p q 均为中点
     			rightLink  = p.next;//把第一个3去掉【321】
     			leftLink = inverseLinkList2(p);//【321】

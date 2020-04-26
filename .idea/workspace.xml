@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d6064c-cd43-46c6-ae97-f4ef57cf59ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/aaa/java/basis/StringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/linked/Longest_Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/test/Test位运算.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/test/Test递归.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/Dynamic_Programming/Back0_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/Dynamic_Programming/Back0_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/Dynamic_Programming/YanghuiTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/Dynamic_Programming/YanghuiTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/array/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/array/Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/array/GenericArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/array/GenericArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/array/ShuZuYueJie.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/array/ShuZuYueJie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/linked/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/linked/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/sort/Sorts.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/sort/Sorts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/sort1/BubbleInsertionSelectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/sort1/BubbleInsertionSelectSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/sort1/Quick_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/sort1/Quick_sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/stack/SampleBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/stack/SampleBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/test/first.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,13 +26,83 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Data_structures_and_algorithms" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\repository" />
+        <option name="userSettingsFile" value="D:\Software\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1UCV19Cyxaq0xPLr0Uj4qdkryv2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://git@github.com:SLianfu/community_init.git" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\Data_structures_and_algorithms\model" />
+      <recent name="D:\Code\Data_structures_and_algorithms\model\leetcode2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\Data_structures_and_algorithms\model\src\graph" />
+      <recent name="D:\Code\Data_structures_and_algorithms\model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -35,6 +116,142 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.StringTest">
+    <configuration name="BubbleInsertionSelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort1.BubbleInsertionSelectSort" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.SampleBrowser" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sorts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.Sorts" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aaa.java.basis.StringTest" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aaa.java.basis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test位运算" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test位运算" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test递归" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test递归" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="model_to_leetcode" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="model_to_leetcode" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StringTest" />
+        <item itemvalue="Application.Sorts" />
+        <item itemvalue="Application.Test位运算" />
+        <item itemvalue="Application.BubbleInsertionSelectSort" />
+        <item itemvalue="Application.SampleBrowser" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -45,7 +262,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574860346687</updated>
-      <workItem from="1574860348231" duration="468000" />
+      <workItem from="1574860348231" duration="1723000" />
+      <workItem from="1574901758416" duration="1339000" />
+      <workItem from="1574991129359" duration="6996000" />
+      <workItem from="1575333969747" duration="699000" />
+      <workItem from="1580622378373" duration="8652000" />
+      <workItem from="1584068961007" duration="2779000" />
+      <workItem from="1584348098873" duration="3669000" />
+      <workItem from="1584458516968" duration="926000" />
+      <workItem from="1584519701642" duration="2786000" />
+      <workItem from="1584592557951" duration="5716000" />
+      <workItem from="1584699256150" duration="5654000" />
+      <workItem from="1584755764103" duration="1023000" />
+      <workItem from="1584794343195" duration="10161000" />
+      <workItem from="1584842969484" duration="10000" />
+      <workItem from="1585026648046" duration="816000" />
+      <workItem from="1587888146078" duration="384000" />
+      <workItem from="1587888878779" duration="436000" />
     </task>
     <servers />
   </component>
@@ -57,10 +290,58 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2384" y="77" key="#xdebugger.evaluate" timestamp="1580725848626">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state x="2384" y="77" key="#xdebugger.evaluate/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580725848626" />
+    <state width="1062" height="207" key="GridCell.Tab.0.bottom" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006608" />
+    <state width="1062" height="207" key="GridCell.Tab.0.bottom/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state width="1062" height="207" key="GridCell.Tab.0.center" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.center/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006608" />
+    <state width="1062" height="207" key="GridCell.Tab.0.center/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state width="1062" height="207" key="GridCell.Tab.0.left" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.left/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006607" />
+    <state width="1062" height="207" key="GridCell.Tab.0.left/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state width="1062" height="207" key="GridCell.Tab.0.right" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.0.right/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006608" />
+    <state width="1062" height="207" key="GridCell.Tab.0.right/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state width="1062" height="207" key="GridCell.Tab.1.bottom" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955529" />
+    <state width="1062" height="207" key="GridCell.Tab.1.bottom/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state width="1062" height="207" key="GridCell.Tab.1.center" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.center/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955528" />
+    <state width="1062" height="207" key="GridCell.Tab.1.center/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state width="1062" height="207" key="GridCell.Tab.1.left" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.left/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955527" />
+    <state width="1062" height="207" key="GridCell.Tab.1.left/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state width="1062" height="207" key="GridCell.Tab.1.right" timestamp="1580738506916">
+      <screen x="1920" y="0" width="1152" height="720" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.right/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955528" />
+    <state width="1062" height="207" key="GridCell.Tab.1.right/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
   </component>
 </project>

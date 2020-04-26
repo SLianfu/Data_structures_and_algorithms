@@ -32,9 +32,9 @@ public class Sorts {
 		int num2 = test.f2(12);
 		System.out.println("num2="+num2);
 		
-		int num = test.f(12);
+		//int num = test.f(12);
 		
-		System.out.println("num"+num);
+		//System.out.println("num"+num);
 	}
 	/**
 	 * 递归算法
@@ -61,21 +61,22 @@ public class Sorts {
 		  
 		  return ret;
 		}
-//将递归代码转化成非递归
-int f2(int n) {
-  if (n == 1) return 1;
-  if (n == 2) return 2;
-  
-  int ret = 0;//总和
-  int pre = 2;//f2
-  int prepre = 1;//f1
-  for (int i = 3; i <= n; ++i) {
-    ret = pre + prepre;
-    prepre = pre;
-    pre = ret;
-  }
-  return ret;
-}
+	//将递归代码转化成非递归 //改题目了
+	int f2(int n) {
+	  if (n == 1) return 1;
+	  if (n == 0) return 0;
+
+	  int ret = 0;//总和
+	  int pre = 1;//f1
+	  int prepre = 0;//f0
+	  for (int i = 2; i <= n; ++i) {
+		ret = pre + prepre;
+		prepre = pre;
+		pre = ret;
+		  System.out.println("i= " +i +" ret=" +ret);
+	  }
+	  return ret;
+	}
 
 
 }

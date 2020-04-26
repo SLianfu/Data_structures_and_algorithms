@@ -64,8 +64,10 @@ public class Array {
             return false;
         }
         // 位置合法
-        for( int i = count; i > index; --i){
-            data[i] = data[i - 1];
+        for( int i = count; i > index; --i){//0~5：6个数字；插入index=3；
+            data[i] = data[i - 1];//count=6，data[5]移动到data[6]
+            //i=4时：data[4-1] 移动到data[4]
+            //边界条件：i=3，跳出循环==》data[3]=value
         }
         data[index] = value;
         ++count;
@@ -84,6 +86,8 @@ public class Array {
             arr[i] = data[i];
         }
         this.data = arr;*/
+
+
 
         --count;
         return true;
