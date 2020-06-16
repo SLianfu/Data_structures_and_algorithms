@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d6064c-cd43-46c6-ae97-f4ef57cf59ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/src/aaa/java/basis/StringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/linked/Longest_Palindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/test/Test位运算.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/test/Test递归.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/aaa/java/leetcode/Num67.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/Dynamic_Programming/Back0_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/Dynamic_Programming/Back0_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/Dynamic_Programming/YanghuiTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/Dynamic_Programming/YanghuiTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/array/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/array/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/array/GenericArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/array/GenericArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/array/ShuZuYueJie.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/array/ShuZuYueJie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/linked/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/linked/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/sort/Sorts.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/sort/Sorts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/sort1/BubbleInsertionSelectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/sort1/BubbleInsertionSelectSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/sort1/Quick_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/sort1/Quick_sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/stack/SampleBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/stack/SampleBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/test/first.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/aaa/java/basis/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/aaa/java/basis/StringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/backtrack/Backtrack_algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/backtrack/Backtrack_algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/kmp/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/kmp/KMP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/search/Bsearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/search/Bsearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/aaa/java/basis/StringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/aaa/java/basis/StringTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/kmp/KMP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/kmp/KMP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/search/Bsearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/search/Bsearch.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,13 +108,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringTest">
-    <configuration name="BubbleInsertionSelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort1.BubbleInsertionSelectSort" />
+  <component name="RunManager" selected="Application.KMP">
+    <configuration name="Bsearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="search.Bsearch" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sort1.*" />
+          <option name="PATTERN" value="search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.SampleBrowser" />
+    <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kmp.KMP" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stack.*" />
+          <option name="PATTERN" value="kmp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KMP" />
+        <item itemvalue="Application.Bsearch" />
         <item itemvalue="Application.StringTest" />
         <item itemvalue="Application.Sorts" />
         <item itemvalue="Application.Test位运算" />
-        <item itemvalue="Application.BubbleInsertionSelectSort" />
-        <item itemvalue="Application.SampleBrowser" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +270,11 @@
       <workItem from="1584842969484" duration="10000" />
       <workItem from="1585026648046" duration="816000" />
       <workItem from="1587888146078" duration="384000" />
-      <workItem from="1587888878779" duration="436000" />
+      <workItem from="1587888878779" duration="4949000" />
+      <workItem from="1587952250624" duration="793000" />
+      <workItem from="1588040767652" duration="2213000" />
+      <workItem from="1588212380876" duration="5220000" />
+      <workItem from="1588571927787" duration="2167000" />
     </task>
     <servers />
   </component>
@@ -299,49 +295,31 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2384" y="77" key="#xdebugger.evaluate" timestamp="1580725848626">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state x="2384" y="77" key="#xdebugger.evaluate/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580725848626" />
-    <state width="1062" height="207" key="GridCell.Tab.0.bottom" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.bottom/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006608" />
-    <state width="1062" height="207" key="GridCell.Tab.0.bottom/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
-    <state width="1062" height="207" key="GridCell.Tab.0.center" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.center/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006608" />
-    <state width="1062" height="207" key="GridCell.Tab.0.center/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
-    <state width="1062" height="207" key="GridCell.Tab.0.left" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.left/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006607" />
-    <state width="1062" height="207" key="GridCell.Tab.0.left/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
-    <state width="1062" height="207" key="GridCell.Tab.0.right" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.right/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580700006608" />
-    <state width="1062" height="207" key="GridCell.Tab.0.right/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
-    <state width="1062" height="207" key="GridCell.Tab.1.bottom" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955529" />
-    <state width="1062" height="207" key="GridCell.Tab.1.bottom/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
-    <state width="1062" height="207" key="GridCell.Tab.1.center" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.center/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955528" />
-    <state width="1062" height="207" key="GridCell.Tab.1.center/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
-    <state width="1062" height="207" key="GridCell.Tab.1.left" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.left/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955527" />
-    <state width="1062" height="207" key="GridCell.Tab.1.left/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
-    <state width="1062" height="207" key="GridCell.Tab.1.right" timestamp="1580738506916">
-      <screen x="1920" y="0" width="1152" height="720" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.right/1920.0.1152.720/0.0.1536.864@0.0.1536.864" timestamp="1580699955528" />
-    <state width="1062" height="207" key="GridCell.Tab.1.right/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" timestamp="1580738506916" />
+    <state x="2384" y="77" key="#xdebugger.evaluate" />
+    <state x="2384" y="77" key="#xdebugger.evaluate/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.0.bottom" />
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.0.bottom/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.0.center" />
+    <state width="1493" height="277" key="GridCell.Tab.0.center/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.0.center/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.0.left" />
+    <state width="1493" height="277" key="GridCell.Tab.0.left/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.0.left/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.0.right" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.0.right/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.1.bottom" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.1.bottom/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.1.center" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.1.center/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.1.left" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.1.left/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
+    <state width="1062" height="207" key="GridCell.Tab.1.right" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right/1920.0.1152.720/0.0.1536.864@0.0.1536.864" />
+    <state width="1062" height="207" key="GridCell.Tab.1.right/1920.0.1152.720/0.0.1536.864@1920.0.1152.720" />
   </component>
 </project>

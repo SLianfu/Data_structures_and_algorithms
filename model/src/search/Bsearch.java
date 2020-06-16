@@ -12,12 +12,12 @@ public class Bsearch {
 
 	public static void main(String[] args) {
 		int[] arr = {2,4,5,6,8,8,9,11};
-		int value = 0;
+		int value = 8;
 		Bsearch bs = new Bsearch();
 		int num = bsearch2(arr,arr.length,value);
 		System.out.println(num);
 		if(num >= 0) {
-			System.out.println("arr[num]="+arr[num]);
+			System.out.println("arr["+num+"]="+arr[num]);
 		} else {
 			System.out.println("数组中没有这个值:"+value);
 		}
@@ -89,9 +89,10 @@ public class Bsearch {
 		 * 3. 向mid 索引值的右边扫描，将所有满足 1000， 的元素的下标，加入到集合ArrayList
 		 * 4. 将Arraylist返回
 		 */
+	static int a = 0;
 	public static List<Integer> binarySearch2(int[] arr, int left, int right, int findVal) {
 
-		System.out.println("hello~");
+		System.out.println("hello~查看递归调用多少次："+ a++);
 		// 当 left > right 时，说明递归整个数组，但是没有找到
 		if (left > right) {
 			return new ArrayList<Integer>();

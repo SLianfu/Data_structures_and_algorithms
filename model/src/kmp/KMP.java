@@ -7,15 +7,22 @@ public class KMP {
 		String a = "abcde";
 		String b ="abcw";
 		KMP k = new KMP();
-		k.kmp(a.toCharArray(), a.length(), b.toCharArray(), b.length());
+		int kmp_index = k.kmp(a.toCharArray(), a.length(), b.toCharArray(), b.length());
 		System.out.println(k.kmp(a.toCharArray(), a.length(), b.toCharArray(), b.length()));
+		System.out.println(kmp_index);
 
 	}
 	
 
 	// a, b分别是主串和模式串；n, m分别是主串和模式串的长度。
+
 	public static int kmp(char[] a, int n, char[] b, int m) {
-	  int[] next = getNexts(b, m);//得到好前缀公共子串的末尾字符下标【next[0]表示好前缀为1个元素，公共子串为0，next[0] = -1
+	  int[] next = getNexts(b, m);
+	  //next[0,1,2,3,4,] 分别记录了 好前缀 的最长前缀子串 的结尾字符下标
+	  //也可以提前构建一个数组，用来存储 模式串 中每个前缀（这些前缀都有可能是好前缀）的最长可匹配前缀子串 的 结尾字符下标。
+		// 我们把这个数组定义为 next 数组
+
+	  //得到好前缀公共子串的末尾字符下标【next[0]表示好前缀为1个元素，公共子串为0，next[0] = -1
 	  //next[1]表示好前缀长度为2：ab，公共子串为0，用next[1]=-1表示】
 	  //next[2]:aba长度j为3:公共子串有a,长度k为1:前缀子串：a,ab;后缀子串：a,ba;其前缀下标为0【用j=0+1表示滑动的位数】
 	  //【抽象一点就是主串i不变】
@@ -23,7 +30,12 @@ public class KMP {
 	  int j = 0;
 	  for (int i = 0; i < n; ++i) {
 	    while (j > 0 && a[i] != b[j]) { // 一直找到a[i]和b[j]，【j>0表示好前缀长度>0】
-	      j = next[j - 1] + 1;//如：abaE中;next[j-1]=0;公共子串下标为0，他的下一个元素下标为1
+	      j = next[j - 1] + 1;
+	      //当有坏字符出现时，next[j] 表示 第j个字符是坏字符，
+			// 所以其前缀子串是 next[j-1] 的下标。所以把模式串移动到next[]+1的位置上
+	      //next[j-1] = 好前缀长度为j-1 的前缀子串 的结尾下标
+
+	      //如：abaE中;next[j-1]=0;公共子串下标为0，他的下一个元素下标为1
 	      //继续拿公共子串的下一个元素：其下标为next[j-1]+1;用j指向next[2]+1,表示模式串的第二个元素继续与主串i进行比较
 	    }
 	    if (a[i] == b[j]) {
@@ -41,10 +53,11 @@ public class KMP {
 
 
 	// b表示模式串，m表示模式串的长度
+	//求 好前缀的最长可匹配前缀和后缀子串
 	private static int[] getNexts(char[] b, int m) {
 	  int[] next = new int[m];
 	  next[0] = -1;	//模式串只取一个字符时，不存在前缀子串后缀子串，公共子串为null，用-1表示没有下标元素
-	  int k = -1;  //记录next[i] 的值
+	  int k = -1;  //记录next[i] 的值 即前缀字串的结尾下标
 	  for (int i = 1; i < m; ++i) {	//遍历模式串
 	    while (k != -1 && b[k + 1] != b[i]) {
 	      k = next[k];
